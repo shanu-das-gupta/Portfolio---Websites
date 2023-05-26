@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<style>
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }  
+ 
+ body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+ }
+  
+#container
+{
+    display: flex;
+    height: 2300px;
+    width: 100%;
+    
+
+}
+
+#first
+{
+    height: 721px;
+    width: 20%;
+    border: 2px solid black;
+    position: sticky;
+    top:0;
+
+}
+
+#second
+{
+    height: 2300px;
+    width: 80%;
+    /* border: 2px solid violet; */
+}
+
+.common
+{
+    width: 100%;
+    border: 2px solid black;
+    height: 30px;
+}
+
+#heading
+{
+  height: 130px;
+}
+
+#head
+{
+   position: relative;
+   top: 20px;
+   font-size: 35px;
+   text-align: center;
+   font-weight: 500;
+}
+
+#d1
+{
+    height: 65px;
+}
+
+#btn1
+{
+    width: 100%;
+    height: 62.5px;
+    border: none;
+    background-color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+#btn1:hover
+{
+    background-color: rgb(220, 212, 212);
+}
+
+
+#d2
+{
+    height: 73px;
+}
+
+#btn2
+{
+    width: 100%;
+    height: 69px;
+    border: none;
+    background-color: white;
+    font-size: 27px;
+    cursor: pointer; 
+}
+
+#btn2:hover
+{
+    background-color: rgb(220, 212, 212);
+}
+
+#d3
+{
+    height: 65px;
+}
+
+#btn3
+{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: white;
+    font-size: 27px;
+    cursor: pointer; 
+}
+
+#btn3:hover{
+    background-color: rgb(220, 212, 212) ;
+}
+
+#d4
+{
+    height: 65px;
+}
+
+#btn4
+{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: white;
+    font-size: 27px;
+    cursor: pointer;  
+}
+
+#btn4:hover{
+    background-color: rgb(220, 212, 212) ;
+}
+
+#d5
+{
+    height: 65px;
+}
+
+#btn5
+{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: white;
+    font-size: 27px;
+    cursor: pointer;  
+}
+
+#btn5:hover{
+    background-color: rgb(220, 212, 212);
+}
+
+#e1
+{
+    /* border: 2px solid red; */
+}
+
+
+.main
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 30px 35px;
+}
+
+.para
+{
+    font-size: 16px;
+    margin: 0px 35px;
+}
+
+.list li{
+    margin-left: 60px;
+    margin-right: 24px;
+}
+
+.space
+{
+    /* border: 2px solid blue; */
+    height: 80px;
+    width: 100%;
+}
+
+#inside
+{
+    width: 85%;
+    background-color: #EBEBEB;
+    height: 130px;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    /* border: 2px solid red; */
+}
+
+#inside1
+{
+    /* border: 2px solid green; */
+    position: relative;
+    top: 35px;
+}
+
+
+
+</style>
+
+
+<body>
+
+    <div id="container">
+
+        <div id="first">
+           
+            <div id="heading" class="common">
+                <h1 id="head">Javascript Documentation </h1>
+                  
+            </div>
+
+            <div id="d1" class="common">
+                <button id="btn1">Introduction</button>
+            </div>
+
+            <div id="d2" class="common">
+               <button id="btn2">What you should 
+                already know</button>
+            </div>
+
+            <div id="d3" class="common">
+                <button id="btn3">JavaScript and Java</button>
+            </div>
+
+            <div id="d4" class="common">
+            <button id="btn4">Hello world</button>
+            </div>
+
+            <div id="d5" class="common">
+             <button id="btn5">Variables</button>
+            </div>
+
+        </div>
+
+    
+        <div id="second">
+            
+        <div id="e1">
+            
+            <h1 id="head1" class="main">Introduction</h1>
+            <p class="para">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+            <br>
+            <p class="para">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+            <br>
+
+           <ul class="list">
+               <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+
+               </li>
+               <br>
+
+               <li> Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>        
+       
+           </ul>
+
+        </div>
+
+        <div class="space"></div>
+
+
+        <div id="e2">
+            
+         <h1 id="head2" class="main">
+            What you should already know
+         </h1>
+
+         <p class="para">This guide assumes you have the following basic background:</p>
+         <br>
+        <ul class="list">
+            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+            <br>   
+            <li> Good working knowledge of HyperText Markup Language (HTML).</li>
+            <br>
+            <li> Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+        </ul>
+
+        <div class="space"></div>
+
+        </div>
+
+
+        <div id="e3">
+            <h1 id="head2" class="main">JavaScript and Java</h1>
+            <p class="para">JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+            <br>
+            <p class="para">In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+            <br>
+            <p class="para">JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+        </div>
+
+        <div class="space">
+
+        </div>
+
+
+        <div id="e4">
+            <h1 id="head3" class="main">
+                Hello world
+            </h1>
+            <p class="para">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+            <br>
+           
+            <div id="inside">
+
+                <div id="inside1">
+                    <p class="para">function greetMe(yourName) { alert("Hello " + yourName); } </p>
+                    <br>
+                    <p class="para">greetMe("World");</p>
+                </div>
+
+           
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <p class="para">Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+
+        </div>
+
+        <div class="space">
+        
+        </div>
+
+        <div id="e5">
+
+          <h1 id="head4" class="main">Variables</h1>
+          <p class="para">You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+          <br>
+          <p class="para">A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+          <br>
+          <p class="para">You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+
+        </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+         
+      function ScrollWin1()
+      {
+         window.scrollTo({ top:0, behavior:"smooth"});
+      }
+
+      document.getElementById("btn1").addEventListener("click",ScrollWin1);
+
+
+      function ScrollWin2()
+      {
+         window.scrollTo({ top:400, behavior:"smooth"});
+      }
+
+      document.getElementById("btn2").addEventListener("click",ScrollWin2);
+
+      function ScrollWin3()
+      {
+         window.scrollTo({ top:715, behavior:"smooth"});
+      }
+
+      document.getElementById("btn3").addEventListener("click",ScrollWin3);
+      
+
+      function ScrollWin4()
+      {
+         window.scrollTo({ top:1125, behavior:"smooth"});
+      }
+
+      document.getElementById("btn4").addEventListener("click",ScrollWin4);
+
+
+      function ScrollWin5()
+      {
+         window.scrollTo({ top:1540, behavior:"smooth"});
+      }
+
+      document.getElementById("btn5").addEventListener("click",ScrollWin5);
+
+
+
+    </script>
+ 
+</body>
+</html>

@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            font-family: "Roboto", sans-serif;
+            overflow-x: hidden;
+        }
+
+        #first
+        {
+            width: 100%;
+            height: 55px;
+            border: 2px solid black;
+            background-color: #270082;
+            display: grid;
+            grid-template-areas: 
+            "inside1 inside2 inside3 inside4 inside5";
+
+            position: sticky;
+            top: 0;
+            z-index: 20;
+
+        }
+
+        .btn
+        {
+            background-color: #270082;
+            color: white;
+            text-decoration: none;
+            border: none;
+            font-size: 17px;
+            
+            
+
+        }
+
+        .btn:hover{
+            text-decoration: underline;
+        }
+
+        #inside1
+        {
+            color: white;
+            width: 800px;
+            /* border: 2px solid red; */
+            font-size: 20px;
+            position: relative;
+            top: 14px;
+            left: 90px;
+        }
+
+
+        #inside2
+        {
+           position: relative;
+           top: 14px;
+           left: 80px;
+        }
+
+
+        #inside3
+        {
+            position: relative;
+            top: 14px;
+            left: 55px;
+        }
+
+        #inside4
+        {
+            position: relative;
+            top: 14px;
+            left: 30px;
+        }
+
+        #inside5
+        {
+            position: relative;
+            top:14px;
+            
+        }
+        
+        #second
+        {
+            background-image: url(img/hero_image\ \(1\).png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        #inside6
+        {
+            color: white;
+            text-align: center;
+        }
+
+
+        #inside6 h1
+        {
+           font-size: 70px;
+           margin: 12px 0px;
+           position: relative;
+           top: 280px;
+        }
+
+        #inside6 span
+        {
+           position: relative;
+           top: 300px;
+           margin: 12px 0px;
+           font-size: 25px;
+           font-weight: 100;
+        }
+
+        #inside6 p
+        {
+           position: relative;
+           top: 320px;
+           margin: 12px 0px;
+           width: 850px;
+           /* border: 2px solid red; */
+           font-size: 18px;
+           font-weight: 100;
+
+        }
+
+
+        #inside7
+        {
+            width: 100%;
+            height: 806px;
+            background-color: #281154;
+            
+            display: flex;
+            justify-content: center;
+        }
+
+        #e1
+        {
+            color: white;
+            text-align: center;
+        }
+
+
+        #e1 h1{
+            font-size: 48px;
+            margin: 12px 0px;
+            font-weight: 500;
+            position: relative;
+            top: 20px;
+            right: 5px;
+
+        }
+
+        #unique2
+        {
+           font-size: 24px;
+           margin: 12px 0px;
+           position: relative;
+           top: 35px;
+           font-weight: 500;
+
+        }
+
+
+        #e1 p
+        {
+            position: relative;
+            top: 60px;
+            left: 260px;
+            /* border: 2px solid sandybrown; */
+            width: 910px;
+            margin: 12px 0px;
+            padding: 12px 5px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        #but
+        {
+            background-color: red;
+            color: white;
+            font-weight: 100;
+            /* margin: 10px 5px; */
+            padding: 10px 5px;
+            position: relative;
+            top: 75px;
+            left: 250px;
+            width: 195px;
+            height: 45px;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #but:hover{
+            background-color: rgb(239, 80, 80);
+        }
+
+        #unique
+        {
+            position: relative;
+            top: 140px;
+            right: 100px;
+            font: 17px;
+            font-weight: 100;
+            /* border: 2px solid green; */
+
+        }
+        
+        #p1
+        {
+            width: 968px;
+            height: 590px;
+            position: relative;
+            top: 200px;
+            
+
+        }
+
+        #fourth
+        {
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 1150px;
+
+
+        }
+
+
+        #inside8
+        {
+            position: relative;
+            top: 250px;
+            /* border: 2px solid purple; */
+            width: 100%;
+            height: 900px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+
+        #heading
+        {
+            position: relative;
+            bottom: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+
+
+        }
+
+
+        #para1
+        {
+            position: relative;
+            bottom: 40px;
+            left: 250px;
+            width: 1000px;
+            /* border: 2px solid red; */
+            text-align: center;
+            padding: 20px 5px;
+            margin: 12px 5px;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        #btno
+        {
+            position: relative;
+           bottom: 40px;
+            left: 690px;
+            width: 133px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 6px 4px;
+            background-color: #37008E;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+
+        }
+
+        #btno:hover
+        {
+          background-color:  #6529c6;
+        }
+        
+        #p2
+        {
+            position: relative;
+            top: 15px;
+            left: 380px;
+            width: 792px;
+            height: 494px;
+        }
+
+        #fifth
+        {
+            width: 100%;
+            height: 667px;
+            /* border: 2px solid black; */
+            /* background-color: #270082; */
+          
+            
+
+        }
+
+        #video
+        {
+            width: 100%;
+            height: 666px;
+            opacity: 0.7;
+           
+        }
+
+        #sixth
+        {
+            width: 100%;
+            height: 450px;
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-areas: 
+            "inside9 inside10";
+        }
+
+       .level
+       {
+         height: 450px;
+         /* border: 2px solid black; */
+         
+       }
+
+       #inside9
+       {
+        width: 700px;
+       }
+
+       #inside10
+       {
+        width: 700px;
+       }
+
+       #p3
+       {
+        width: 468px;
+        height: 310px;
+        position: relative;
+        top: 70px;
+        left: 200px;
+       }
+
+       #heading2
+       {
+          position: relative;
+          top: 100px;
+          font-size: 24px;
+          font-weight: 600;
+
+         
+       }
+
+       #para2
+       {
+        /* border: 2px solid green; */
+        width: 550px;
+        height: 150px;
+        position: relative;
+        top: 75px;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 32px;
+        padding: 20px 0px;
+        margin: 12px 0px;
+
+        
+       }
+
+       #para3
+       {
+        /* border: 2px solid blue; */
+        width: 600px;
+        position: relative;
+        top:70px;
+        font-size: 14px;
+        font-weight: 100;
+
+       }
+
+       #btno1
+       {
+        position: relative;
+        top: 117px;
+        width: 123px;
+        height: 40px;
+        background-color: #37008E;
+        color: white;
+        padding: 10px 5px;
+        font-size: 16px;
+        font-weight: 200;
+        border-radius: 4px;
+        cursor: pointer;
+       }
+
+        #elementinside
+        {
+            /* border: 2px solid red; */
+            width: 550px;
+            position: relative;
+            right: 100px;
+            bottom: 25px;
+
+        }
+
+        #hr1
+        {
+            position: relative;
+            top: 95px;
+            width: 555px;
+
+        }
+
+
+        #seventh
+        {
+            width: 100%;
+            height: 292px;
+            border: 2px solid green;
+            background-color: #1B0058;
+            display: grid;
+            grid-template-areas: 
+            "inside11 inside12 inside13 inside14";
+            color: white;
+
+        }
+
+
+        .new
+        {
+            width: 270px;
+            height: 200px;
+            /* border: 2px solid black; */
+        }
+
+        #inside11
+        {
+            grid-area: inside11;
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+
+        #inside12
+        {
+            grid-area: inside12;
+            position: relative;
+            top: 50px;
+            left: 78px;
+        }
+
+        #inside13
+        {
+            grid-area: inside13;
+            position: relative;
+            top: 50px;
+            left: 40px;
+        }
+
+        #inside14
+        {
+            grid-area: inside14;
+            position: relative;
+            top: 50px;
+            left: 10px;
+        }
+      
+        .headingg
+        {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 6px 0px;
+        }
+
+        .item
+        {
+            font-size: 15px;
+            margin: 4px 0px;
+        }
+
+        .item2
+        {
+            font-size: 15px;
+            margin: 4px 0px;
+        }
+
+        .item3
+        {
+            font-size: 15px;
+            margin: 4px 0px;
+        }
+
+        .item4
+        {
+            font-size: 15px;
+            margin: 4px 0px;
+        }
+       
+
+
+     </style>
+
+
+
+    
+</head>
+<body>
+    
+    <div id="first">
+
+        <div id="inside1">
+            <h4>myTunes</h4>
+        </div>
+
+        <div id="inside2">
+             <button id="a1" class="btn">Overview</button>
+        </div>
+
+        <div id="inside3">
+            <button id="a2" class="btn">Music</button>
+        </div>
+        <div id="inside4">
+            <button id="a3" class="btn">Video</button>
+        </div>
+
+        <div id="inside5">
+           <button id="a4" class="btn">Gift Cards</button>
+        </div>
+    </div>
+
+    <div id="second">
+            
+            
+        <div id="inside6">
+            <h1>myTunes</h1>
+            <span>Your music, movies, and TV shows take center stage.</span>
+            <p>myTunes is the best way to organize and enjoy the music, movies, and TV shows you already 
+            have — and shop for the ones you want. Enjoy all the entertainment 
+            myTunes has to offer on your Mac and PC.</p>
+
+        </div>
+    </div>
+    
+     
+    <div id="third">
+       
+        <div id="inside7">
+
+            <div id="e1">
+                <h1> &#9835; Music</h1>
+            <span id="unique2">45 million songs. Zero ads.</span>
+            <p>Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline. 
+                All the music in your personal myTunes library — no matter where it came from — 
+                lives right alongside the Orange Music catalog. Start your free three-month trial with 
+                no commitment, and cancel anytime.</p>
+
+                <button id="but">Start Your Trial Now</button>
+
+            <span id ="unique">Orange Music is available in myTunes, and for iOS and Android devices.</span>
+            <img src="img/ipad-iphone.png" alt="" id="p1">
+            </div>
+            
+        </div>
+
+
+
+    </div>
+
+    <div id="fourth">
+        
+      <div id="inside8">
+           
+        <h4 id="heading">The movie and TV collection you always wished for. Granted.</h4>
+        <p id="para1">With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
+
+        <button id="btno">Read More</button>
+
+        <img src="img/mac.png" alt="" id="p2">
+
+        
+
+      </div>
+
+    </div>
+
+    <div id="fifth">
+     
+       <video src="img/y2mate.com - Spotify  Love At First Listen_720p.mp4"  width="1000px" id="video" type="video/mp4" controls="controls"></video> 
+
+    </div>
+
+    <div id="sixth">
+         
+        <div id="inside9" class="level">
+            
+            <img src="img/gift_card.png" alt="" id="p3">
+
+            
+        </div>
+        
+        <div id="elementinside">
+
+
+        <div id="inside10" class="level">
+           <h4 id="heading2">Gift Cards</h4>
+           <p id="para2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati molestias veritatis porro.</p>
+           
+           <p id="para3">
+            Already have an Orange MyTunes Music Gift Card?
+           </p>
+           <hr id="hr1">
+           <button id="btno1">Redeem</button>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    <div id="seventh">
+       
+     <div id="inside11" class="new">
+          <p id="head1" class="headingg">Shop & Learn</p>
+          <hr id="hr2" class="hori">
+          <br>
+          <p class="item">Music</p>
+          <p class="item">Movies</p>
+          <p class="item">Shows</p>
+          <p class="item">Apps</p>
+          <p class="item">Gift Cards</p>
+          
+     </div>
+
+     <div id="inside12" class="new">
+          <p id="head2" class="headingg">Orange Store</p> 
+          <hr id="hr3" class="hori">
+          <br>
+          <p class="item2">Find a Store</p>
+          <p class="item2">Today at Orange</p>
+          <p class="item2">Orange Camp</p>
+          <p class="item2">Financing</p>
+          <p class="item2">Order Status</p>
+     </div>
+
+     <div id="inside13" class="new">
+        <p id="head3" class="headingg">Education  & Business</p>
+        <hr id="hr4" class="hori">
+        <br>
+        <p class="item3">Orange & Education</p>
+        <p class="item3">Shop for Collage</p>
+        <p class="item3">Orange & Business</p>
+        <p class="item3">Shop For Business</p>
+        <p class="item3">Jobs</p>
+
+     </div>
+
+     <div id="inside14" class="new">
+        <p id="head4" class="headingg">About Orange</p>
+        <hr id="hr5" class="hori">
+        <br>
+        <p class="item4">Newsroom</p>
+        <p class="item4">Orange Leadershp</p>
+        <p class="item4">Investors</p>
+        <p class="item4">Envents</p>
+        <p class="item4">Contact Orange</p>
+
+        
+     </div>
+
+
+
+
+    </div>
+
+   
+
+
+  
+
+
+
+  <script>
+ 
+ function scrollWin1()
+ {
+     window.scrollTo({ top:0,behavior:"smooth"});
+ } 
+ 
+ document.getElementById("a1").addEventListener("click", scrollWin1);
+
+
+ function scrollWin2()
+ {
+    window.scrollTo({ top:800, behavior:"smooth"});
+ }
+
+ document.getElementById("a2").addEventListener("click",scrollWin2);
+
+
+ function scrollWin3()
+ {
+    window.scrollTo({
+        top : 2756,
+        behavior: "smooth"
+    });
+ }
+
+ document.getElementById("a3").addEventListener("click",scrollWin3);
+
+
+ function scrollWin4()
+ {
+    window.scrollTo({
+        top : 3422,
+        behavior: "smooth"
+    })
+ }
+
+ document.getElementById("a4").addEventListener("click",scrollWin4);
+
+  </script>
+
+
+</body>
+</html>

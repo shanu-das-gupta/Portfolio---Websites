@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  
+
+    .container
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        background-color: blanchedalmond;
+        
+
+    }
+
+   
+   
+
+    #pic1{
+        position: absolute;
+        top: 67px;
+        left: 37% ;
+
+        width: 400px;
+        height: 600px;
+        display: block;
+
+       
+    }
+
+    @keyframes shanu1 {
+
+        0%{
+            opacity: 1;
+        }
+
+        20%{
+            opacity: 0.7;
+        }
+
+        40%{
+            opacity: 0.3;
+        }
+
+        60%{
+            opacity: 0;
+        }
+
+        80%{
+            opacity:0.5;
+        }
+
+        100%{
+            opacity: 1;
+        }
+
+        
+        
+    }
+
+    #pic2{
+        position: absolute;
+        top: 67px;
+        left: 37% ;
+
+        width: 400px;
+        height: 600px;
+        display: block;
+        animation: shanu1 10s 4 ease-in-out forwards;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="pics">
+            <img src="img/2080664.jpg" alt="" id="pic1">
+        </div>
+
+        <div class="pics2">
+            <img src="img/642647.jpg" alt="" id="pic2">
+        </div>
+      
+
+    </div>
+</body>
+</html>
